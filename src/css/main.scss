@@ -242,6 +242,7 @@ img {
       width: 100%;
       @media not screen and (min-width: 769px) {
         font-size: 1rem;
+        display: none;
       }
     }
   }
@@ -338,6 +339,21 @@ img {
     position: fixed;
     z-index: 9999;
     top: 20px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media not screen and (min-width: 600px) {
+  .h_tool {
+    display: none;
+  }
+  .navbtn {
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
     right: 10px;
     cursor: pointer;
     width: 50px;
@@ -797,6 +813,9 @@ img {
     width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
+    @media not screen and (min-width: 1281px) {
+      width: 1100px;
+    }
     @media not screen and (min-width: 1025px) {
       width: 100%;
       padding: 20px;
@@ -824,11 +843,7 @@ img {
 
 #mainimage {
   width: 100%;
-  height: 800px;
-  background-image: url('../images/mainimage.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 760px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -836,9 +851,13 @@ img {
   color: #000;
   flex-direction: column;
   padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  @media not screen and (min-width: 1281px) {
+    height: 700px;
+  }
   @media not screen and (min-width: 1025px) {
-    height: 580px;
-    background-size: contain;
+    height: 650px;
     padding: 20px;
     box-sizing: border-box;
     position: relative;
@@ -846,93 +865,65 @@ img {
   /*スマホ横*/
   @media screen and (max-width: 1024px) and (orientation: landscape) {
     width: 100%;
-    background-image: url('../images/mainimage.jpg');
-    background-size: cover;
+    height: 600px;
   }
   @media not screen and (min-width: 769px) {
     width: 100%;
-    height: 100vh;
-    background-image: url('../images/mainimage_smp.jpg');
-    background-size: contain;
-    padding: 3%;
   }
   @media not screen and (min-width: 767px) {
     background-size: cover;
+    padding: 30px;
+    padding: 10px;
   }
+  @media not screen and (min-width: 376px) {
+    height: 550px;
+  }
+
   .m_copy {
+    margin: 80px 0;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
-    @media not screen and (min-width: 1025px) {
+    @media not screen and (min-width: 1281px) {
+      margin: 60px 0;
+      width: 750px;
       display: inline-block;
-      width: 80%;
-    }
-    @media not screen and (min-width: 769px) {
-      width: 100%;
-    }
-    @media not screen and (min-width: 767px) {
-      display: initial;
-      width: initial;
-    }
-    &:before {
-      @media not screen and (min-width: 769px) {
-        content: '';
-        width: 649px;
-        height: 210px;
-        display: inline-block;
-        background-size: contain;
-        background-image: url('../images/m_copy01_tub.png');
-        background-repeat: no-repeat;
-      }
-      @media not screen and (min-width: 640px) {
-        width: 350px;
-        height: 113px;
-        background-image: url('../images/m_copy01_smp.png');
-      }
-      @media not screen and (min-width: 360px) {
-        width: 300px;
-        height: 113px;
-      }
-    }
-    img {
-      @media not screen and (min-width: 769px) {
-        display: none;
-      }
-    }
-  }
-  .emblem {
-    position: absolute;
-    @media screen and (min-width: 1025px) {
-      bottom: 30%;
-      right: 10%;
     }
     @media not screen and (min-width: 1025px) {
-      top: 10px;
-      right: 10px;
-    }
-    @media not screen and (min-width: 769px) {
-      top: initial;
-      bottom: 30%;
-      left: 10px;
+      margin: 40px 0;
     }
     @media not screen and (min-width: 767px) {
-      position: absolute;
-      top: initial;
-      bottom: 40%;
-      left: 0;
-    }
-    img {
-      @media not screen and (min-width: 767px) {
-        width: 220px;
-      }
+      margin: 20px 0;
     }
   }
+
+  .emblem.emb_s {
+    @media not screen and (min-width: 376px) {
+      width: 180px;
+      display: inline-block;
+    }
+  }
+
   #mainimage-inner {
     width: 1200px;
     margin: 0 auto;
     position: relative;
+    z-index: 1;
     @media not screen and (min-width: 1025px) {
       width: 100%;
       margin: 0 auto;
       position: relative;
+    }
+  }
+  .mainimage_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -1008,6 +999,9 @@ section {
   font-weight: 400;
   color: #000;
   font-size: 1.6rem;
+  @media not screen and (min-width: 1281px) {
+    width: 1100px;
+  }
   @media not screen and (min-width: 1025px) {
     width: 100%;
     padding: 20px;
@@ -1040,40 +1034,59 @@ section {
 #mainimage_sub {
   width: 100%;
   height: 350px;
-  background-image: url('../images/mainimage_sub.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: #000;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: #d6dde0;
+  @media screen and (min-width: 1281px) {
+    padding-left: 80px;
+  }
   @media not screen and (min-width: 1025px) {
     height: 250px;
   }
   @media not screen and (min-width: 769px) {
-    margin-top: 119px;
+    margin-top: 89px;
   }
   @media not screen and (min-width: 668px) {
-    background-image: url('../images/mainimage_sub_smp.jpg');
-    margin-top: 97px;
+    margin-top: 67px;
     height: 200px;
-    background-position: right;
   }
   h2 {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: #133a65;
-    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
     @media not screen and (min-width: 1025px) {
+      width: 980px;
       font-size: 3rem;
+    }
+    @media not screen and (min-width: 769px) {
+      width: 100%;
+      padding-left: 20px;
     }
     @media not screen and (min-width: 668px) {
       font-size: 2rem;
-      text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8), -1px -1px 0px rgba(255, 255, 255, 0.8), -1px -1px 3px rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .mainimage_sub_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 100%;
+    img {
+      position: absolute;
+      right: 0;
     }
   }
 }
