@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          quality: 50, //デフォルトは50
+          quality: 90, //デフォルトは50
         },
       },
     },

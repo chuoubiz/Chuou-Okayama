@@ -12,6 +12,8 @@ import ContactParts from '../components/ContactParts';
 import FlowParts from '../components/FlowParts';
 import Seo from '../components/Seo';
 import TopBlog from '../components/TopBlog';
+import MainimageBg from '../components/MainimageBg';
+import CatchTxt from '../components/CatchTxt';
 
 const indexPage = () => {
   return (
@@ -22,19 +24,16 @@ const indexPage = () => {
 
       <FootBt />
       <div id='mainimage'>
-        <div className='m_copy'>
-          <img src='images/m_copy01.png' width={1078} height={197} alt='必ずお力になります私たちにお任せください心に寄り添った対応を致します。' />
+        <div id='mainimage-inner'>
+          <CatchTxt />
+
+          <div className='top_column'>
+            <div className='title'>探偵コラム</div>
+            <div className='post'>2023.4.13 ホームページリニューアルここにお知らせなどを表示します。</div>
+          </div>
         </div>
-        <div className='emblem pc'>
-          <img src='images/emblem_01.png' width={528} height={102} alt='' />
-        </div>
-        <div className='emblem tub'>
-          <img src='images/emblem_01_smp.png' width={350} alt='' />
-        </div>
-        <div className='top_column'>
-          <div className='title'>探偵コラム</div>
-          <div className='post'>2023.4.13 ホームページリニューアルここにお知らせなどを表示します。</div>
-        </div>
+
+        <MainimageBg />
       </div>
 
       <main role='main'>
@@ -55,7 +54,7 @@ const indexPage = () => {
                 <p>年中無休２４時間体制で各専門の相談員が、お電話やメール・ラインなどで無料相談を承っております。</p>
               </div>
               <div className='greeting_img'>
-                <img src='images/greeting_img.png' width='700' height='413' alt='' />
+                <img src='images/greeting_img.jpg' width='700' height='413' alt='' />
               </div>
             </div>
           </div>
