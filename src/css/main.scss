@@ -1012,6 +1012,32 @@ img {
     @media not screen and (min-width: 767px) {
       width: 100%;
     }
+    a {
+      display: inline-block;
+      margin-left: 10px;
+      text-decoration: none;
+      color: #133a65;
+      position: relative;
+      @media not screen and (min-width: 769px) {
+        margin-left: 0;
+      }
+      &::after {
+        border-bottom: solid 1px #133a65;
+        padding-bottom: 0px;
+        left: 0;
+        content: '';
+        display: block;
+        position: absolute;
+        transition: all 0.3s ease;
+        width: 0;
+      }
+      &::after {
+        left: 0;
+      }
+      &:hover::after {
+        width: 200px;
+      }
+    }
   }
 }
 
