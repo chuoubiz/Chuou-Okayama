@@ -14,6 +14,7 @@ import Seo from '../components/Seo';
 import TopBlog from '../components/TopBlog';
 import MainimageBg from '../components/MainimageBg';
 import CatchTxt from '../components/CatchTxt';
+import TopHeadBlog from '../components/TopHeadBlog';
 
 const indexPage = () => {
   return (
@@ -29,7 +30,7 @@ const indexPage = () => {
 
           <div className='top_column'>
             <div className='title'>探偵コラム</div>
-            <div className='post'>2023.4.13 ホームページリニューアルここにお知らせなどを表示します。</div>
+            <TopHeadBlog />
           </div>
         </div>
 
