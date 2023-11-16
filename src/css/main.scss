@@ -607,13 +607,13 @@ img {
     padding: 5px;
     border-radius: 10px;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-weight: 900;
     text-decoration: none;
     height: 100%;
   }
   .f_tel_bt > a {
-    background-color: #cc0000;
+    background-color: #c12a2d;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -621,23 +621,27 @@ img {
     padding: 8px;
     border-radius: 10px;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     font-weight: 900;
     text-decoration: none;
     position: relative;
   }
-  .f_tel_bt > a:before {
-    content: '無料相談窓口24時間受付';
-    font-size: 1.2rem;
-    color: #000;
+  .f_tel_bt > a::before {
+    content: '相談無料';
+    font-size: 1.8rem;
+    color: #133a65;
     padding: 5px;
-    display: inline-block;
-    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    min-height: 40px;
     line-height: 1.2;
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
     margin-right: 10px;
+    font-weight: bolder;
   }
   .f_line_bt > a {
     background-color: #06c755;
@@ -648,10 +652,50 @@ img {
     padding: 5px;
     border-radius: 10px;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-weight: 900;
     text-decoration: none;
     height: 100%;
+    position: relative;
+    &::before {
+      background: #ff0004;
+      border-radius: 50%;
+      color: #fff;
+      content: '1';
+      display: block;
+      font-size: 1rem;
+      height: 20px;
+      line-height: 20px;
+      position: absolute;
+      right: -3px;
+      text-align: center;
+      top: -3px;
+      width: 20px;
+      z-index: 2;
+    }
+  }
+}
+
+@media not screen and (min-width: 996px) {
+  .foot_bt > .f_mail_bt,
+  .foot_bt > .f_line_bt {
+    width: 25%;
+  }
+  .foot_bt > .f_tel_bt {
+    width: 50%;
+  }
+  .f_mail_bt > a,
+  .f_line_bt > a {
+    font-size: 1.8rem;
+  }
+  .f_tel_bt > a {
+    font-size: 2.2rem;
+  }
+  .f_tel_bt > a::before {
+    font-size: 1.7rem;
+    width: initial;
+    min-height: initial;
+    padding: 8px;
   }
 }
 
@@ -3365,6 +3409,11 @@ section {
   font-weight: 700;
   padding: 10px 20px;
   min-width: 250px;
+  text-decoration: none;
+  transition: all 0.5s;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .table_plan {
@@ -3694,13 +3743,13 @@ section {
   font-size: 20px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  z-index: 101;
+  z-index: 1;
   cursor: pointer;
   @media not screen and (min-width: 1025px) {
-    bottom: 76px;
+    bottom: 81px;
   }
   @media not screen and (min-width: 767px) {
-    bottom: 121px;
+    bottom: 127px;
   }
 }
 
@@ -3775,4 +3824,41 @@ section {
       }
     }
   }
+}
+
+/*フォーム部分*/
+
+/* 入力エラーのスタイル */
+input[type='text']:required,
+input[type='text']:invalid,
+input[type='email']:required,
+input[type='email']:invalid,
+textarea:required {
+  color: #630015;
+  border-color: #c20c33;
+  background-color: #ffecf0;
+}
+
+/* 入力値が正常な時のスタイル */
+input[type='text']:valid,
+input[type='email']:valid,
+textarea:valid {
+  color: #333;
+  border-color: #ccc;
+  background: #fff;
+}
+
+/*クリックされたときにplaceholder非表示*/
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
 }
