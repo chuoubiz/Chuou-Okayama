@@ -16,7 +16,6 @@
     "gatsby": "^5.12.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scroll": "^1.8.9",
     "swiper": "^9.4.1"
   },
   "repository": {
@@ -46,6 +45,7 @@
     "gatsby-source-microcms": "^3.0.0",
     "gatsby-transformer-sharp": "^5.12.3",
     "modern-css-reset": "^1.4.0",
+    "react-scroll": "^1.9.0",
     "sass": "^1.69.5"
   }
 }
