@@ -29,7 +29,7 @@ const indexPage = () => {
           <CatchTxt />
 
           <div className='top_column'>
-            <div className='title'>探偵コラム</div>
+            <div className='title'>探偵ブログ</div>
             <TopHeadBlog />
           </div>
         </div>
