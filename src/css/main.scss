@@ -253,6 +253,9 @@ img {
   @media not screen and (min-width: 769px) {
     width: 100%;
   }
+  @media not screen and (min-width: 481px) {
+    width: 80%;
+  }
 }
 
 .h_tool {
@@ -724,6 +727,20 @@ img {
   }
 }
 
+@media not screen and (min-width: 376px) {
+  .f_mail_bt > a,
+  .f_line_bt > a,
+  .f_tel_bt > a {
+    font-size: 1.6rem;
+  }
+  .f_tel_bt > a::before {
+    font-size: 1.4rem;
+    width: initial;
+    min-height: initial;
+    padding: 8px;
+  }
+}
+
 .f_nav a {
   color: #003567;
   padding: 5px 0;
@@ -920,7 +937,7 @@ img {
     padding: 10px;
   }
   @media not screen and (min-width: 376px) {
-    height: 550px;
+    height: 100vh;
   }
 
   .m_copy {
@@ -936,6 +953,7 @@ img {
     }
     @media not screen and (min-width: 767px) {
       margin: 20px 0;
+      width: 100%;
     }
   }
 
@@ -963,11 +981,8 @@ img {
     right: 0;
     z-index: 0;
     width: 100%;
-
-    img {
-      width: auto;
-      height: 100%;
-      object-fit: cover;
+    @media not screen and (min-width: 376px) {
+      height: 100vh;
     }
   }
 }
@@ -1011,6 +1026,9 @@ img {
     }
     @media not screen and (min-width: 767px) {
       width: 100%;
+    }
+    @media not screen and (min-width: 376px) {
+      padding: 10px 0;
     }
     a {
       display: inline-block;
@@ -1126,6 +1144,10 @@ section {
     margin-top: 67px;
     height: 200px;
   }
+  @media not screen and (min-width: 366px) {
+    margin-top: 58px;
+    height: 200px;
+  }
   h2 {
     font-size: 4rem;
     font-weight: bold;
@@ -1146,6 +1168,9 @@ section {
     @media not screen and (min-width: 668px) {
       font-size: 2rem;
     }
+    @media not screen and (min-width: 366px) {
+      font-size: 1.8rem;
+    }
   }
 
   .mainimage_sub_bg {
@@ -1154,6 +1179,12 @@ section {
     right: 0;
     z-index: 0;
     height: 100%;
+    @media not screen and (min-width: 480px) {
+      width: 40%;
+    }
+    @media not screen and (min-width: 366px) {
+      width: 30%;
+    }
     img {
       position: absolute;
       right: 0;
@@ -1494,6 +1525,9 @@ section {
   border-radius: 20px;
   margin: 40px 0;
   text-align: justify;
+  @media not screen and (min-width: 481px) {
+    padding: 20px;
+  }
 }
 .reason_box:nth-child(even) {
   flex-direction: row-reverse;
@@ -1584,6 +1618,20 @@ section {
   }
   .reason_box:nth-child(even) .reason_txt {
     padding-left: 0;
+  }
+}
+
+@media not screen and (min-width: 481px) {
+  .reason_txt h3 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-top: 40px;
+    line-height: 1.2;
+  }
+  .reason_txt h3:after {
+    bottom: initial;
+    top: -20px;
   }
 }
 
@@ -2522,9 +2570,15 @@ section {
     justify-content: space-around;
     .txt_box {
       width: 72%;
+      @media not screen and (min-width: 668px) {
+        width: 100%;
+      }
     }
     .img_box {
       width: 25%;
+      @media not screen and (min-width: 668px) {
+        width: 100%;
+      }
       img {
         height: auto;
       }
@@ -3112,15 +3166,25 @@ section {
 
 #blog {
   .main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    @media screen and (min-width: 769px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     article {
       width: 70%;
+      @media not screen and (min-width: 668px) {
+        width: 100%;
+      }
       .eyecatch_img {
         width: 600px;
         margin: 20px auto;
+        @media not screen and (min-width: 668px) {
+          width: 100%;
+        }
+        img {
+          margin: 0 auto;
+        }
       }
       h2 {
         border-bottom: solid 3px #003065;
@@ -3130,6 +3194,9 @@ section {
     }
     aside {
       width: 25%;
+      @media not screen and (min-width: 668px) {
+        width: 100%;
+      }
       .aside-inner {
         position: sticky;
         top: 0;
@@ -3183,9 +3250,17 @@ section {
   padding: 20px 0;
   .blog_img {
     width: 20%;
+    @media not screen and (min-width: 668px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
   .blog_txt {
     width: 75%;
+    @media not screen and (min-width: 668px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
     a {
       font-weight: bold;
       color: #003065;

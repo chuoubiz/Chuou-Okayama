@@ -32,7 +32,6 @@ const TopHeadBlog = () => {
     <>
       {posts.map((post) => (
         <div key={post.postsId} className='post'>
-          <time dateTime={dayjs.utc(post.date).tz('Asia/Tokyo').format('YYYY-MM-DDTHH:mm:ss')}>{dayjs.utc(post.date).tz('Asia/Tokyo').format('YYYY/MM/DD')}</time>
           <Link to={`/posts/${post.postsId}`}>{post.title}</Link>
         </div>
       ))}

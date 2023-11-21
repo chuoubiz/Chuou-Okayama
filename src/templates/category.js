@@ -45,8 +45,6 @@ const CategoryPage = ({ data, pageContext }) => {
             <div className='blog_txt'>
               <Link href={'/posts/' + node.postsId + '/'}>{node.title}</Link>
               <br />
-              <time dateTime={dayjs.utc(node.date).tz('Asia/Tokyo').format('YYYY-MM-DDTHH:mm:ss')}>{dayjs.utc(node.date).tz('Asia/Tokyo').format('YYYY/MM/DD')}</time>
-              <br />
 
               {stripHTML(node.content).length > MAX_CONTENT_LENGTH ? stripHTML(node.content).substring(0, MAX_CONTENT_LENGTH) + '...' : stripHTML(node.content)}
             </div>

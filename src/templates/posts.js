@@ -21,7 +21,7 @@ const PostPage = ({ data }) => {
 
   return (
     <>
-      <Layout id={microcmsPosts.category.id} title={data.microcmsPosts.title} slug={microcmsPosts.category.id} parentTitle={microcmsPosts.category.name}>
+      <Layout id={microcmsPosts.category.id} title={data.microcmsPosts.title} slug={'category/' + microcmsPosts.category.id} parentTitle={microcmsPosts.category.name}>
         <article>
           {data.microcmsPosts.eyecatch && (
             <div className='eyecatch_img'>
@@ -30,9 +30,7 @@ const PostPage = ({ data }) => {
           )}
 
           <h2>{data.microcmsPosts.title}</h2>
-          <p className='date'>
-            更新日：<time dateTime={dayjs.utc(data.microcmsPosts.date).tz('Asia/Tokyo').format('YYYY-MM-DDTHH:mm:ss')}>{dayjs.utc(data.microcmsPosts.date).tz('Asia/Tokyo').format('YYYY/MM/DD')}</time>
-          </p>
+
           <div
             className='post_main_box'
             dangerouslySetInnerHTML={{
@@ -55,7 +53,6 @@ const PostPage = ({ data }) => {
 
 export const Head = ({ data }) => (
   <>
-    <body />
     <Seo title2={data.microcmsPosts.title} />
   </>
 );

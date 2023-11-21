@@ -1,32 +1,26 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
+import { Link } from 'gatsby';
 
-import "modern-css-reset";
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
+import 'modern-css-reset';
+import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 
 const Case = () => {
   return (
     <>
-      <Layout id="case" title="調査事例のご紹介" sections={true}>
-        <section id="gosoudan">
-          <div className="main-content">
-            <h3 className="subtitle">
-              年間約8,000件のご相談をいただいています
-            </h3>
-            <p>
-              当社では、お客様にとっての「本当の問題解決」をお手伝いするため、高い調査力はもちろんのこと、カウンセラーによるメンタルケアによって、お客様を常時サポートいたします。
-            </p>
+      <Layout id='case' title='調査事例のご紹介' sections={true}>
+        <section id='gosoudan'>
+          <div className='main-content'>
+            <h3 className='subtitle'>年間約8,000件のご相談をいただいています</h3>
+            <p>当社では、お客様にとっての「本当の問題解決」をお手伝いするため、高い調査力はもちろんのこと、カウンセラーによるメンタルケアによって、お客様を常時サポートいたします。</p>
 
-            <div className="counsering_box">
-              <div className="counsering_img">
-                <img src="/images/case_06.jpg" alt="" />
+            <div className='counsering_box'>
+              <div className='counsering_img'>
+                <img src='/images/case_06.jpg' alt='' />
               </div>
-              <div className="counsering_txt">
+              <div className='counsering_txt'>
                 <h3>調査期間中・調査後も無料でカウンセリング</h3>
-                <p>
-                  「調査期間中もサポートをしてくれたおかげで、とても心強く、安心してお任せする事ができた、前向きな気持ちになれた」との声が多く寄せられています。
-                </p>
+                <p>「調査期間中もサポートをしてくれたおかげで、とても心強く、安心してお任せする事ができた、前向きな気持ちになれた」との声が多く寄せられています。</p>
 
                 <h3>指導相談員資格認定</h3>
                 <p>
@@ -39,13 +33,11 @@ const Case = () => {
           </div>
         </section>
 
-        <section id="uwaki">
-          <div className="main-content">
-            <h2 className="subtitle2 mtb80">
-              総合探偵社中央リサーチ岡山の調査事例とお客様の声の一部をご紹介します
-            </h2>
+        <section id='uwaki'>
+          <div className='main-content'>
+            <h2 className='subtitle2 mtb80'>総合探偵社中央リサーチ岡山の調査事例とお客様の声の一部をご紹介します</h2>
 
-            <h3 className="subtitle">浮気・不倫調査の事例</h3>
+            <h3 className='subtitle'>浮気・不倫調査の事例</h3>
 
             <p>
               総合探偵社中央リサーチ岡山では、40年間あらゆる調査をしてまいりました。
@@ -53,12 +45,9 @@ const Case = () => {
               特に浮気調査の経験は豊富です。相談の段階でも、どんな調査の方法が有効か判断し、より良い調査方法を提案させていただきます。
             </p>
 
-            <div className="voice_box">
-              <h4>
-                たった20時間で浮気調査を終え、しっかりとした報告書を作成していただきました
-                / パート・女性(30代)
-              </h4>
-              <div className="voice_txt">
+            <div className='voice_box'>
+              <h4>たった20時間で浮気調査を終え、しっかりとした報告書を作成していただきました / パート・女性(30代)</h4>
+              <div className='voice_txt'>
                 <p>
                   主人が携帯はロックしているし、こそこそ誰かとメールやラインなどしているようで明らかに様子が怪しい日々が続いてました。
                   <br />
@@ -66,9 +55,7 @@ const Case = () => {
                   <br />
                   思い切って、総合探偵社中央リサーチ岡山さんの無料相談をしてもらうことにしました。
                 </p>
-                <p>
-                  早速相談員の方に状況を詳しく聞いていただき、気持ちが軽くなりました。その後、相談員の方が浮気の調査なら20時間パックを提案されました。私は、「たった20時間の調査で事実確認ができるのか」と、とても不安だったのですが、総合探偵社中央リサーチ岡山のスタッフの皆さんがとても親身になって対応してくれたので思い切って、20時間パックを依頼することにしました。
-                </p>
+                <p>早速相談員の方に状況を詳しく聞いていただき、気持ちが軽くなりました。その後、相談員の方が浮気の調査なら20時間パックを提案されました。私は、「たった20時間の調査で事実確認ができるのか」と、とても不安だったのですが、総合探偵社中央リサーチ岡山のスタッフの皆さんがとても親身になって対応してくれたので思い切って、20時間パックを依頼することにしました。</p>
                 <p>
                   数日後、初めてみる私でもとても分かりやすい調査報告書をいただきました。
                   <br />
@@ -77,24 +64,20 @@ const Case = () => {
                   追加料金も払うことなく、動かぬ証拠・今後に有利な報告書を作成していただきました。総合探偵社中央リサーチ岡山さんにはとても感謝しています。
                 </p>
               </div>
-              <div className="voice_img">
-                <img src="/images/case_01.jpg" alt="" />
+              <div className='voice_img'>
+                <img src='/images/case_01.jpg' alt='' />
               </div>
             </div>
 
-            <div className="voice_box">
-              <h4>
-                相談員の的確なアドバイスから浮気を突き止めることができました /
-                専業主婦(50代)
-              </h4>
-              <div className="voice_txt">
+            <div className='voice_box'>
+              <h4>相談員の的確なアドバイスから浮気を突き止めることができました / 専業主婦(50代)</h4>
+              <div className='voice_txt'>
                 <p>
                   主人が「仕事があるから」「飲みがあるから」と言いながら帰りが遅い日が続いてます。最近は嘘をついて誰かと会っているのでは？と疑っていました。
                   <br />
                   そこで、思い切って総合探偵社中央リサーチ岡山さんの無料相談をしてみることにしました。相談員の方が「必ず、浮気する人物は、妻（夫）に内緒の自由な時間（架空の時間）を作る必要があるのです」と言われました。
                   <br />
-                  とはいえ、まだ主人が浮気するなんて信じることができないと言うと、「まずはＧＰＳロガーという機械を使って行動パターンを把握してみては？」と、アドバイスしてくれました。
-                  早速、主人の行動パターンを把握するためにデータを収集することにしました。
+                  とはいえ、まだ主人が浮気するなんて信じることができないと言うと、「まずはＧＰＳロガーという機械を使って行動パターンを把握してみては？」と、アドバイスしてくれました。 早速、主人の行動パターンを把握するためにデータを収集することにしました。
                 </p>
 
                 <p>
@@ -107,32 +90,27 @@ const Case = () => {
                   総合探偵社中央リサーチ岡山さんに浮気調査を依頼してよかったです。
                 </p>
               </div>
-              <div className="voice_img">
-                <img src="/images/case_02.jpg" alt="" />
+              <div className='voice_img'>
+                <img src='/images/case_02.jpg' alt='' />
               </div>
             </div>
 
             <p>
-              <Link to="/unfaithful/" className="bt02">
+              <Link to='/unfaithful/' className='bt02'>
                 浮気調査の内容について詳しく見る
               </Link>
             </p>
           </div>
         </section>
 
-        <section id="iede">
-          <div className="main-content">
-            <h3 className="subtitle">家出・所在調査の事例</h3>
-            <p>
-              総合探偵社中央リサーチ岡山は地元調査会社ならではの膨大な情報と全国主要都市のネットワークを持っています。
-            </p>
+        <section id='iede'>
+          <div className='main-content'>
+            <h3 className='subtitle'>家出・所在調査の事例</h3>
+            <p>総合探偵社中央リサーチ岡山は地元調査会社ならではの膨大な情報と全国主要都市のネットワークを持っています。</p>
 
-            <div className="voice_box">
-              <h4>
-                手掛かりの全く無い妻の居所を突き止めていただきました /
-                自営業・男性(50代)
-              </h4>
-              <div className="voice_txt">
+            <div className='voice_box'>
+              <h4>手掛かりの全く無い妻の居所を突き止めていただきました / 自営業・男性(50代)</h4>
+              <div className='voice_txt'>
                 <p>
                   急に妻が家を出てしまって、携帯も電源が切られており連絡も取れなくなってしまいました。全く手がかりも、心当たりもない中で、途方にくれてました。安否も気になり、夜も眠れませんでした。
                   <br />
@@ -141,98 +119,77 @@ const Case = () => {
                   迅速な対応、とても感謝しています。
                 </p>
               </div>
-              <div className="voice_img">
-                <img src="/images/case_03.jpg" alt="" />
+              <div className='voice_img'>
+                <img src='/images/case_03.jpg' alt='' />
               </div>
             </div>
 
             <p>
-              <Link to="/whereabouts/" className="bt02">
+              <Link to='/whereabouts/' className='bt02'>
                 家出・所在調査の内容について詳しく見る
               </Link>
             </p>
           </div>
         </section>
 
-        <section id="kekkon">
-          <div className="main-content">
-            <h3 className="subtitle">結婚・身上調査の事例</h3>
+        <section id='kekkon'>
+          <div className='main-content'>
+            <h3 className='subtitle'>結婚・身上調査の事例</h3>
 
-            <p>
-              我が子の幸せを願うのは親として当然のことです。総合探偵社中央リサーチ岡山はお子さんの結婚相手の調査を内密に行います。
-            </p>
+            <p>我が子の幸せを願うのは親として当然のことです。総合探偵社中央リサーチ岡山はお子さんの結婚相手の調査を内密に行います。</p>
 
-            <div className="voice_box">
-              <h4>
-                根拠ある身辺調査の報告書を見て娘の結婚を承諾することができました
-                / 会社員・男性(50代)
-              </h4>
-              <div className="voice_txt">
-                <p>
-                  娘の交際相手が急に、結婚したいと私たちに申し出してきました。娘は相手に夢中で本当の相手の事が見えていないかもしれないし、不安でした。
-                  結婚は一生を左右します。返事をする前に相手とその相手の家族の人物性などを事前に知っておきたいと思い調査を依頼しました。
-                  相手の家族の人物性、風評、職業、生活実態、資産状況他、詳しく調査していただきました。
-                  結果的に評判が良く問題ないことが分かりました。調査結果が判断材料となり、結婚を承諾することにしました。
-                  総合探偵社中央リサーチ岡山さんに調査を依頼してよかったです。
-                </p>
+            <div className='voice_box'>
+              <h4>根拠ある身辺調査の報告書を見て娘の結婚を承諾することができました / 会社員・男性(50代)</h4>
+              <div className='voice_txt'>
+                <p>娘の交際相手が急に、結婚したいと私たちに申し出してきました。娘は相手に夢中で本当の相手の事が見えていないかもしれないし、不安でした。 結婚は一生を左右します。返事をする前に相手とその相手の家族の人物性などを事前に知っておきたいと思い調査を依頼しました。 相手の家族の人物性、風評、職業、生活実態、資産状況他、詳しく調査していただきました。 結果的に評判が良く問題ないことが分かりました。調査結果が判断材料となり、結婚を承諾することにしました。 総合探偵社中央リサーチ岡山さんに調査を依頼してよかったです。</p>
               </div>
-              <div className="voice_img">
-                <img src="/images/case_04.jpg" alt="" />
+              <div className='voice_img'>
+                <img src='/images/case_04.jpg' alt='' />
               </div>
             </div>
 
             <p>
-              <Link to="/survey/" className="bt02">
+              <Link to='/survey/' className='bt02'>
                 結婚・身上調査の内容について詳しく見る
               </Link>
             </p>
           </div>
         </section>
 
-        <section id="toucho">
-          <div className="main-content">
-            <h3 className="subtitle">盗聴・盗撮器発見の事例</h3>
+        <section id='toucho'>
+          <div className='main-content'>
+            <h3 className='subtitle'>盗聴・盗撮器発見の事例</h3>
 
-            <p>
-              昨今では高性能な盗聴・盗撮機器が個人でも手に入れやすくなり、素人では見つけることはまず不可能と言っても過言では無いでしょう。総合探偵社中央リサーチ岡山では、プロの最新機器を備えているだけではなく長年の経験で巧妙に仕掛けられた機器を発見・撤去してきました。
-            </p>
+            <p>昨今では高性能な盗聴・盗撮機器が個人でも手に入れやすくなり、素人では見つけることはまず不可能と言っても過言では無いでしょう。総合探偵社中央リサーチ岡山では、プロの最新機器を備えているだけではなく長年の経験で巧妙に仕掛けられた機器を発見・撤去してきました。</p>
 
-            <div className="voice_box">
-              <h4>
-                盗聴器を撤去だけでなく犯人まで特定してもらえました /
-                会社員・女性(30代)
-              </h4>
+            <div className='voice_box'>
+              <h4>盗聴器を撤去だけでなく犯人まで特定してもらえました / 会社員・女性(30代)</h4>
 
-              <div class="voice_txt">
-                <p>
-                  自分しか知らない情報が漏れていることがあり、自宅を盗聴・盗撮されているかもしれない？と感じるようになりました。
-                  不審な出来事があまりにも多く気になって落ち着かないので調査を依頼することにしました。
-                  家の中から盗聴器が発見された時には背筋の凍る思いでしたが、無事に取り外していただきました。
-                  その後、盗聴されていたという事実の確認・立証のため、張り込み・監視カメラの設置もお願いしました。総合探偵社中央リサーチ岡山さんのおかげで見事に犯人が特定でき、安心して眠れるようになりました。
-                </p>
+              <div class='voice_txt'>
+                <p>自分しか知らない情報が漏れていることがあり、自宅を盗聴・盗撮されているかもしれない？と感じるようになりました。 不審な出来事があまりにも多く気になって落ち着かないので調査を依頼することにしました。 家の中から盗聴器が発見された時には背筋の凍る思いでしたが、無事に取り外していただきました。 その後、盗聴されていたという事実の確認・立証のため、張り込み・監視カメラの設置もお願いしました。総合探偵社中央リサーチ岡山さんのおかげで見事に犯人が特定でき、安心して眠れるようになりました。</p>
               </div>
-              <div className="voice_img">
-                <img src="/images/case_05.jpg" alt="" />
+              <div className='voice_img'>
+                <img src='/images/case_05.jpg' alt='' />
               </div>
             </div>
 
             <p>
-              <Link to="/wiretap/" className="bt02">
+              <Link to='/wiretap/' className='bt02'>
                 盗聴・盗撮器発見の調査内容について詳しく見る
               </Link>
             </p>
           </div>
         </section>
-        <section>
-          <div className="main-content">
-            <h2 className="subtitle2">よくあるご質問</h2>
+        <section id='faq'>
+          <div className='main-content'>
+            <h2 className='subtitle2'>よくあるご質問</h2>
 
-            <dl className="faq_list">
+            <dl className='faq_list'>
               <dt>調査料金の相場はおいくらでしょうか？</dt>
               <dd>
                 調査の内容に対しての労働の対価となりますので、内容に応じて見積もり致します。総合探偵社中央リサーチ岡山は適正な価格設定で追加料金などなく、内容に応じお客様に合った調査方法と料金でご依頼に応じております。
                 <br />
-                <Link to="/price/">調査料金はこちらから</Link>
+                <Link to='/price/'>調査料金はこちらから</Link>
               </dd>
               <dt>浮気調査の成功率はどのくらいなのでしょうか？</dt>
               <dd>
@@ -240,23 +197,17 @@ const Case = () => {
                 <br />
                 従って、いくら警戒が厳しくても、有る答えなら、ほとんどの案件が結果を出せると思われます。
               </dd>
-              <dt>
-                浮気調査を依頼したいのですが、ストーカー法や、つきまとい行為、等の法律があるのに調べることに違法性は無いのでしょうか？
-              </dt>
+              <dt>浮気調査を依頼したいのですが、ストーカー法や、つきまとい行為、等の法律があるのに調べることに違法性は無いのでしょうか？</dt>
               <dd>
                 探偵業者は通常、探偵業の届出を公安委員会（警察）に提出しています。
                 <br />
                 相手に気づかれないよう浮気調査などで尾行・張り込みを行いながら調査をする事に違法性はございません。
               </dd>
-              <dt>
-                家出調査や行方不明者捜索では、全く手がかりがなくても依頼できるのでしょうか？
-              </dt>
-              <dd>
-                総合探偵社中央リサーチ岡山は独自の情報網を持ち、何ら手がかりとなると思われるものがなくても調査可能です。現実、手がかりの無いところから始め、結果を出すような事案がほとんどですのでご安心ください。
-              </dd>
+              <dt>家出調査や行方不明者捜索では、全く手がかりがなくても依頼できるのでしょうか？</dt>
+              <dd>総合探偵社中央リサーチ岡山は独自の情報網を持ち、何ら手がかりとなると思われるものがなくても調査可能です。現実、手がかりの無いところから始め、結果を出すような事案がほとんどですのでご安心ください。</dd>
             </dl>
 
-            <p className="center bold txt24">
+            <p className='center bold txt24'>
               その他、気になることがございましたらなんでもご相談ください。
               <br />
               経験豊富な相談員がお客様のお力になります。
@@ -270,7 +221,7 @@ const Case = () => {
 
 export const Head = () => (
   <>
-    <body className="subpage" />
+    <body className='subpage' />
     <Seo />
   </>
 );

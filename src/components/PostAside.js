@@ -29,10 +29,6 @@ const PostAside = () => {
           <ul className='blog_list'>
             {posts.map((post) => (
               <li key={post.postsId}>
-                <time className='txt12' dateTime={dayjs.utc(post.date).tz('Asia/Tokyo').format('YYYY-MM-DDTHH:mm:ss')}>
-                  {dayjs.utc(post.date).tz('Asia/Tokyo').format('YYYY/MM/DD')}
-                </time>
-                <br />
                 <Link to={`/posts/${post.postsId}`}>{post.title}</Link>
               </li>
             ))}
@@ -44,7 +40,7 @@ const PostAside = () => {
               <div className='line_l'>
                 QRコードから
                 <br />「
-                <a href='https://line.me/R/ti/p/65gpK3qcDs' target=''>
+                <a href='https://line.me/R/ti/p/65gpK3qcDs' target='_blank'>
                   友だち登録
                 </a>
                 」すると、LINEでお問い合わせができます。
@@ -61,8 +57,8 @@ const PostAside = () => {
             </a>
           </p>
           <p>
-            <a href='http://www.pref.okayama.jp/kenkei/kenkei.htm' target='_blank'>
-              <img src='/images/side_bn02.png' alt='岡山県警察' />
+            <a href='https://www.pref.okayama.jp/site/kenkei/' target='_blank'>
+              <img src='/images/side_bn02.png' width={442} height={122} alt='岡山県警察' />
             </a>
           </p>
         </div>
