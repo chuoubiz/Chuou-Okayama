@@ -55,8 +55,6 @@ const TopBlog = () => {
               <div className='blog_txt'>
                 <Link to={`/posts/${post.postsId}`}>{post.title}</Link>
                 <br />
-                <time dateTime={dayjs.utc(post.date).tz('Asia/Tokyo').format('YYYY-MM-DDTHH:mm:ss')}>{dayjs.utc(post.date).tz('Asia/Tokyo').format('YYYY/MM/DD')}</time>
-                <br />
                 {stripHTML(post.content).length > MAX_CONTENT_LENGTH ? stripHTML(post.content).substring(0, MAX_CONTENT_LENGTH) + '...' : stripHTML(post.content)}
               </div>
             </div>
@@ -64,7 +62,7 @@ const TopBlog = () => {
 
           <p className='center'>
             <Link to='/category/blog/' className='bt02'>
-              一覧はこちら »
+              一覧はこちら
             </Link>
           </p>
         </div>
