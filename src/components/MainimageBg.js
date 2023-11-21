@@ -15,8 +15,10 @@ const MainimageBg = () => {
         setDeviceType('desktop_s');
       } else if (width <= 768 && width > 600) {
         setDeviceType('tablet');
-      } else {
+      } else if (width <= 600 && width > 320) {
         setDeviceType('mobile');
+      } else {
+        setDeviceType('mobile_s');
       }
     };
 
@@ -50,6 +52,11 @@ const MainimageBg = () => {
           gatsbyImageData(quality: 90, width: 414, layout: CONSTRAINED)
         }
       }
+      mobilesImage: file(relativePath: { eq: "mainimage_smp_s.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, width: 320, layout: CONSTRAINED)
+        }
+      }
     }
   `);
 
@@ -57,6 +64,7 @@ const MainimageBg = () => {
   const desktopsImage = getImage(data.desktopsImage);
   const tabletImage = getImage(data.tabletImage);
   const mobileImage = getImage(data.mobileImage);
+  const mobilesImage = getImage(data.mobilesImage);
 
   return (
     <>
@@ -64,6 +72,7 @@ const MainimageBg = () => {
       {deviceType === 'desktop_s' && <GatsbyImage className='mainimage_bg' image={desktopsImage} alt='Desktop Image' />}
       {deviceType === 'tablet' && <GatsbyImage className='mainimage_bg' image={tabletImage} alt='Tablet Image' />}
       {deviceType === 'mobile' && <GatsbyImage className='mainimage_bg' image={mobileImage} alt='Mobile Image' />}
+      {deviceType === 'mobile_s' && <GatsbyImage className='mainimage_bg' image={mobilesImage} alt='Mobiles Image' />}
     </>
   );
 };
