@@ -6,7 +6,11 @@
 
 // You can delete this file if you're not using it
 
-export const shouldUpdateScroll = () => {
-  window.scrollTo(0, 0);
-  return false;
+// gatsby-ssr.js
+
+import React from 'react';
+import Layout from './src/components/Layout';
+
+export const wrapPageElement = ({ element, props }) => {
+  return <Layout {...props}>{element}</Layout>;
 };
