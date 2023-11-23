@@ -936,9 +936,14 @@ img {
     padding: 30px;
     padding: 10px;
   }
-  @media not screen and (min-width: 376px) {
-    height: 600px;
+  @media not screen and (min-width: 481px) {
+    height: 100vh;
   }
+
+  @media screen and (max-width: 376px) and (min-height: 668px) {
+    height: 80vh;
+  }
+
   @media not screen and (min-width: 321px) {
     height: 100vh;
   }

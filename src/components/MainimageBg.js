@@ -15,7 +15,7 @@ const MainimageBg = () => {
         setDeviceType('desktop_s');
       } else if (width <= 768 && width > 480) {
         setDeviceType('tablet');
-      } else if (width <= 400 && width > 320) {
+      } else if (width <= 480 && width > 376) {
         setDeviceType('mobile');
       } else {
         setDeviceType('mobile_s');
