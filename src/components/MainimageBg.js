@@ -49,12 +49,12 @@ const MainimageBg = () => {
       }
       mobileImage: file(relativePath: { eq: "mainimage_smp.jpg" }) {
         childImageSharp {
-          gatsbyImageData(quality: 90, width: 414, layout: CONSTRAINED)
+          gatsbyImageData(quality: 90, layout: CONSTRAINED)
         }
       }
-      mobilesImage: file(relativePath: { eq: "mainimage_smp_s.jpg" }) {
+      mobilesImage: file(relativePath: { eq: "mainimage_smp.jpg" }) {
         childImageSharp {
-          gatsbyImageData(quality: 90, width: 320, layout: CONSTRAINED)
+          gatsbyImageData(quality: 90, layout: CONSTRAINED)
         }
       }
     }

@@ -272,7 +272,7 @@ const indexPage = () => {
                   これからも、つらい思いをされている方のお力になれるよう、ご活躍されて下さい。
                 </p>
                 <p>
-                  <a href='https://rikon.vbest.jp/' target='_blank' className='bery_bn'>
+                  <a href='https://rikon.vbest.jp/' target='_blank' rel='noopener noreferrer' className='bery_bn'>
                     <img src='/images/berybest_logo.svg' width={240} alt='ベリーベスト法律事務所' />
                   </a>
                 </p>

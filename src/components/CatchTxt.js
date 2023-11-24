@@ -69,7 +69,7 @@ const CatchTxt = () => {
   const mobileEmbrem = getImage(data.mobileEmbrem);
 
   return (
-    <>
+    <div className='catch_txt'>
       {deviceType === 'desktop' && (
         <>
           <GatsbyImage image={pcEmbrem} className='emblem' alt='' />
@@ -97,7 +97,7 @@ const CatchTxt = () => {
           </h3>
         </>
       )}
-    </>
+    </div>
   );
 };
 
