@@ -928,24 +928,13 @@ img {
     width: 100%;
     height: 600px;
   }
-  @media not screen and (min-width: 769px) {
-    width: 100%;
-  }
   @media not screen and (min-width: 767px) {
-    background-size: cover;
-    padding: 30px;
     padding: 10px;
-  }
-  @media not screen and (min-width: 481px) {
     height: 100vh;
   }
 
   @media screen and (max-width: 376px) and (min-height: 668px) {
-    height: 80vh;
-  }
-
-  @media not screen and (min-width: 321px) {
-    height: 100vh;
+    height: 667px;
   }
 
   .m_copy {
@@ -979,8 +968,12 @@ img {
     z-index: 1;
     @media not screen and (min-width: 1025px) {
       width: 100%;
+      height: 100%;
       margin: 0 auto;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
   }
   .mainimage_bg {
@@ -988,10 +981,6 @@ img {
     top: 0;
     right: 0;
     z-index: 0;
-    width: 100%;
-    @media not screen and (min-width: 480px) {
-      height: 100%;
-    }
   }
 }
 
