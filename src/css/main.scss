@@ -933,8 +933,8 @@ img {
     height: 100vh;
   }
 
-  @media screen and (max-width: 481px) and (min-height: 737px) {
-    height: 667px;
+  @media screen and (max-width: 480px) and (min-height: 760px) {
+    height: 667px !important;
   }
 
   .m_copy {
