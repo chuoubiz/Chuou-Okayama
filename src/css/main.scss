@@ -968,7 +968,7 @@ img {
   }
 
   .emblem {
-    @media not screen and (min-width: 996px) and (orientation: landscape) {
+    @media screen and (max-width: 996px) and (orientation: landscape) {
       width: 320px;
     }
   }
@@ -1473,7 +1473,7 @@ section {
   }
 }
 
-@media not screen and (min-width: 996px) and (orientation: landscape) {
+@media screen and (max-width: 996px) and (orientation: landscape) {
   .plan_naiyo_in {
     width: 31.5%;
   }
@@ -1862,7 +1862,7 @@ section {
   }
 }
 
-@media not screen and (min-width: 996px) and (orientation: landscape) {
+@media screen and (max-width: 996px) and (orientation: landscape) {
   .survey_l:after {
     bottom: -10%;
   }
