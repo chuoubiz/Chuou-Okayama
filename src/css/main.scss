@@ -235,6 +235,9 @@ img {
       width: 100%;
       padding: 3%;
     }
+    @media not screen and (min-width: 996px) and (orientation: landscape) {
+      padding: 15px;
+    }
     h1 {
       font-size: 1.2rem;
       text-decoration: none;
@@ -702,6 +705,12 @@ img {
   }
 }
 
+@media not screen and (min-width: 996px) and (orientation: landscape) {
+  .f_tel_bt > a {
+    font-size: 2rem;
+  }
+}
+
 @media not screen and (min-width: 767px) {
   .foot_bt > .f_mail_bt,
   .foot_bt > .f_line_bt {
@@ -937,6 +946,10 @@ img {
     height: 100svh;
   }
 
+  @media not screen and (min-width: 996px) and (orientation: landscape) {
+    height: 600px;
+  }
+
   .m_copy {
     margin: 80px 0;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
@@ -954,6 +967,11 @@ img {
     }
   }
 
+  .emblem {
+    @media not screen and (min-width: 996px) and (orientation: landscape) {
+      width: 320px;
+    }
+  }
   .emblem.emb_s {
     @media not screen and (min-width: 376px) {
       width: 180px;
@@ -1455,6 +1473,26 @@ section {
   }
 }
 
+@media not screen and (min-width: 996px) and (orientation: landscape) {
+  .plan_naiyo_in {
+    width: 31.5%;
+  }
+  .plan_naiyo_in:after {
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: initial;
+    z-index: 1;
+  }
+  .price_list_in {
+    width: 31.5%;
+  }
+  .table-plan p {
+    width: 100%;
+    display: block;
+  }
+}
+
 /* 1024px 未満 */
 @media not screen and (min-width: 677px) {
   .plan_naiyo {
@@ -1618,6 +1656,16 @@ section {
   }
 }
 
+@media not screen and (min-width: 996px) and (orientation: landscape) {
+  .reason_txt h3:after {
+    bottom: initial;
+    top: 0;
+  }
+  .reason_img img {
+    margin: 0 auto;
+  }
+}
+
 @media not screen and (min-width: 481px) {
   .reason_txt h3 {
     position: relative;
@@ -1724,6 +1772,9 @@ section {
 .survey_sample .swiper-wrapper .item {
   position: relative;
 }
+.survey_sample .swiper-wrapper .item p {
+  margin-bottom: 0;
+}
 .survey_sample .swiper-wrapper .item img {
   margin-bottom: 10px;
 }
@@ -1747,6 +1798,7 @@ section {
     margin-top: -0.5em;
   }
 }
+
 .survey_sample .swiper-wrapper .item:nth-child(3)::after,
 .survey_sample .item:nth-child(6)::after {
   display: none;
@@ -1807,6 +1859,12 @@ section {
   }
   .survey_sample .swiper-wrapper .item:after {
     display: none;
+  }
+}
+
+@media not screen and (min-width: 996px) and (orientation: landscape) {
+  .survey_l:after {
+    bottom: -10%;
   }
 }
 
@@ -2058,7 +2116,7 @@ section {
 }
 
 /* 1024px 未満 */
-@media not screen and (min-width: 767px) {
+@media not screen and (min-width: 767px) and (orientation: portrait) {
   .comment_box {
     padding: 10px;
     margin: 20px 0;
@@ -2075,6 +2133,22 @@ section {
   }
   .comment_box:nth-child(odd) .comment_txt {
     padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 996px) and (orientation: landscape) {
+  .comment_txt {
+    width: 60%;
+  }
+  .comment_img {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .comment_box:nth-child(even) .comment_txt {
+    padding-left: 15px;
+  }
+  .comment_box:nth-child(odd) .comment_txt {
+    padding-right: 15px;
   }
 }
 
@@ -3823,6 +3897,30 @@ section {
     width: 100%;
   }
 }
+@media not screen and (min-width: 481px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 45px !important;
+    width: 45px !important;
+    top: var(--swiper-navigation-top-offset, 40%) !important;
+  }
+}
+@media not screen and (min-width: 376px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 45px !important;
+    width: 45px !important;
+    top: var(--swiper-navigation-top-offset, 35%) !important;
+  }
+}
+@media not screen and (min-width: 321px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 45px !important;
+    width: 45px !important;
+    top: var(--swiper-navigation-top-offset, 30%) !important;
+  }
+}
 /*slider*/
 
 /* ページトップへ戻る */
@@ -3846,8 +3944,12 @@ section {
   @media not screen and (min-width: 1025px) {
     bottom: 81px;
   }
+
   @media not screen and (min-width: 767px) {
     bottom: 127px;
+  }
+  @media not screen and (min-width: 996px) and (orientation: landscape) {
+    bottom: 70px;
   }
 }
 
