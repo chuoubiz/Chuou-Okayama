@@ -31,7 +31,7 @@ const FootBt = () => {
           </Link>
         </li>
         <li className='f_line_bt'>
-          <a href='https://line.me/R/ti/p/65gpK3qcDs' target='_blank'>
+          <a href='https://line.me/R/ti/p/65gpK3qcDs' target='_blank' rel='noopener noreferrer'>
             <img src='/images/line_icon.svg' width={40} height={40} alt='' />
             LINEで相談
           </a>
