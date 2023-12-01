@@ -59,5 +59,23 @@ module.exports = {
         ],
       },
     },
+
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://detective-okayama.biz/`,
+      },
+    },
+
+    `gatsby-plugin-sitemap`,
+
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://detective-okayama.biz', // サイトのベースURLを指定
+        sitemap: 'https://detective-okayama.biz/sitemap-index.xml', // サイトマップのURLを指定
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 };
