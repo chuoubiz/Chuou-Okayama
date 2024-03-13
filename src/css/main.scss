@@ -2064,46 +2064,59 @@ section {
 .comment_box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 30px;
   margin: 40px 0;
-}
-.comment_box:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-.comment_txt {
-  width: 60%;
-}
-.comment_box:nth-child(even) .comment_txt {
-  padding-left: 20px;
-}
-.comment_box:nth-child(odd) .comment_txt {
-  padding-right: 20px;
-}
+  @media not screen and (min-width: 767px) and (orientation: portrait) /*横*/ {
+    padding: 10px;
+    margin: 20px 0;
+  }
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .comment_txt {
+    width: 58%;
+    @media not screen and (min-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 1024px) and (orientation: landscape) /*横*/ {
+      width: 58%;
+    }
 
-.comment_txt h3 {
-  font-size: 2.5rem;
-  position: relative;
-  margin-bottom: 40px;
-}
-.comment_txt h3:after {
-  content: '';
-  width: 100px;
-  height: 1px;
-  background-color: #133a65;
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  z-index: 0;
-}
+    h3 {
+      font-size: 2.5rem;
+      position: relative;
+      margin-bottom: 40px;
+      &:after {
+        content: '';
+        width: 100px;
+        height: 1px;
+        background-color: #133a65;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        z-index: 0;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+  .comment_img {
+    width: 40%;
+    @media not screen and (min-width: 767px) {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    @media screen and (max-width: 1024px) and (orientation: landscape) /*横*/ {
+      width: 40%;
+    }
 
-.comment_txt p {
-  font-size: 1.6rem;
-}
-.comment_img {
-  width: 40%;
-}
-.comment_img img {
-  width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .bery_bn {
@@ -2117,28 +2130,7 @@ section {
   }
 }
 
-/* 1024px 未満 */
-@media not screen and (min-width: 767px) and (orientation: portrait) {
-  .comment_box {
-    padding: 10px;
-    margin: 20px 0;
-  }
-  .comment_txt {
-    width: 100%;
-  }
-  .comment_img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .comment_box:nth-child(even) .comment_txt {
-    padding-left: 0;
-  }
-  .comment_box:nth-child(odd) .comment_txt {
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 996px) and (orientation: landscape) {
+@media screen and (max-width: 996px) and (orientation: landscape) /*縦*/ {
   .comment_txt {
     width: 60%;
   }
