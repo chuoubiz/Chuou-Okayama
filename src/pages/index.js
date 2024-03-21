@@ -67,8 +67,8 @@ const indexPage = () => {
             <h3>お客様に合った無駄のないプランを提案し、動かぬ証拠を取ります。</h3>
             <div className='plan_box'>
               <div className='plan_box_inner'>
-                <img src='images/plan_txt01.png' className='pc' width={894} height={162} style={{ position: 'relative', zIndex: 1 }} alt='' />
-                <img src='images/plan_txt01_smp.png' className='tub' style={{ position: 'relative', zIndex: 1 }} alt='' />
+                <img src='images/plan_txt01_2.png' className='pc' style={{ position: 'relative', zIndex: 1, marginLeft: '60px' }} alt='' />
+                <img src='images/plan_txt01_smp.webp' className='tub' style={{ position: 'relative', zIndex: 1 }} alt='' />
               </div>
             </div>
             <p className='center mb80 '>
